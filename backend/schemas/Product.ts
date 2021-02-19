@@ -6,7 +6,7 @@ export const Product = list({
   // ui
   fields: {
     name: text({ isRequired: true }),
-    desc: text({ ui: { displayMode: 'textarea' } }),
+    description: text({ ui: { displayMode: 'textarea' } }),
     photo: relationship({
       ref: 'ProductImage.product',
       ui: {
